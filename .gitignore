@@ -8,3 +8,4 @@ __pychache__/
 .venv/
 .venv_new/
 *.pyc
+.DS_Store
