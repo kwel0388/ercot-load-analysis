@@ -1,0 +1,10 @@
+Native_Load_2025.xlsx
+asos.csv
+texas_hourly_weather_2025.csv
+*.csv
+ercot_output/merged_load_weather.csv
+ercot_output/zone_weather_engineered.csv
+__pychache__/
+.venv/
+.venv_new/
+*.pyc
