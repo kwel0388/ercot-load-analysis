@@ -1,15 +1,11 @@
 Native_Load_2025.csv
 asos.csv
-<<<<<<< HEAD
 texas_hourly_weather_2025.csv
-=======
-texas_hourly_weather.csv
->>>>>>> 72dace0 (Update gitignore and clear cached files)
 austin_hourly_2025.csv
 ercot_output/merged_load_weather.csv
 ercot_output/zone_weather_engineered.csv
 
-__pychache__/
+__pycache__/
 .venv/
 .venv_new/
 *.pyc
