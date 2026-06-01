@@ -4,7 +4,8 @@ texas_hourly_weather_2025.csv
 austin_hourly_2025.csv
 ercot_output/merged_load_weather.csv
 ercot_output/zone_weather_engineered.csv
-
+txstations.csv
+txstations.rtf
 __pycache__/
 .venv/
 .venv_new/

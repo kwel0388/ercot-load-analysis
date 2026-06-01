@@ -1,12 +1,12 @@
 # ERCOT Load & Temperature Analysis — 2025
 
-Analyses the relationship between temperature and electricity demand across ERCOT's 8 weather zones using 2025 hourly data.
+Short ERCOT project: Analyse relationship between temperature and electricity demand across ERCOT's 8 weather zones using 2025 hourly data.
 
 ## What it does
-- Merges ERCOT native load data with ASOS weather station data from 178 Texas stations
+- Merges ERCOT 2025 native load data with ASOS weather station data from 178 Texas stations in 2025
 - Assigns stations to ERCOT zones via county boundary shapefiles
 - Calculate Cooling Degree Hours (CDH) and Heating Degree Hours (HDH) from hourly temperature
-- Runs OLS regression of zone load on CDH, HDH, hour-of-day fixed effects, and weekend indicator — separately for all 8 zones
+- Runs OLS regression of zone load on CDH, HDH, hour fixed effects, and weekend indicator (separately for all 8 zones)
 
 ## Key findings
 - Temperature and time-of-day explain 74–87% of load variance in weather-sensitive zones (R² = 0.741–0.868)
@@ -20,5 +20,8 @@ Analyses the relationship between temperature and electricity demand across ERCO
 
 ## Files
 - `ercot_analysis.py`
-- `ercot_output/zone_summary_stats.csv` — descriptive stats by zone
-- `ercot_output/regression_results.csv` — OLS results by zone
+- `ercot_output/zone_summary_stats.csv` - descriptive stats by zone
+- `ercot_output/regression_results.csv` - OLS results by zone
+- `txstations.csv` - lat/long of all ASOS tx stations
+- `Native_Load_2025.xlsx` - ercot native load file
+- `Texas_County_Boundaries_Detailed.csv` - maps all counties to ercot weather region
