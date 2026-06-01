@@ -11,3 +11,5 @@ __pycache__/
 .venv_new/
 *.pyc
 .DS_Store
+ercot_output/.DS_Store
+num_obs_per_zone.csv

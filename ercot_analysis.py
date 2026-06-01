@@ -369,9 +369,9 @@ for zone in sorted(merged["zone"].unique()):
     })
 
     print(f"\n{zone}: R²={model.rsquared:.3f}, n={int(model.nobs)}")
-    print(f"  CDH coef: {model.params.get('CDH', 'N/A'):.2f} MW per degree-hour above 65°F")
-    print(f"  HDH coef: {model.params.get('HDH', 'N/A'):.2f} MW per degree-hour below 65°F")
-    print(f"  Weekend: {model.params.get('is_weekend', 'N/A'):.2f} MW (vs weekday)")
+    print(f"  CDH coef: {model.params.get('CDH', 'N/A'):.2f} MW per degree-hour above 65°F  (p={model.pvalues.get('CDH', np.nan):.4f})")
+    print(f"  HDH coef: {model.params.get('HDH', 'N/A'):.2f} MW per degree-hour below 65°F  (p={model.pvalues.get('HDH', np.nan):.4f})")
+    print(f"  Weekend: {model.params.get('is_weekend', 'N/A'):.2f} MW (vs weekday)  (p={model.pvalues.get('is_weekend', np.nan):.4f})")
 
 reg_df = pd.DataFrame(regression_results)
 reg_df.to_csv(OUTPUT_DIR / "regression_results.csv", index=False)
